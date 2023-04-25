@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  background-color: hsl(211, 68%, 94%);
+  @media only screen and (max-width: 600px) {
+    margin-top: 1rem;
+  }
+}
+
+.container {
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 600px;
+  border-radius: 1rem;
+  padding: 2rem;
+  &__nav {
+    font-family: "Barlow", sans-serif;
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+    display: flex;
+    justify-content: space-between;
+
+    &--notifs {
+      font-size: 2rem;
+      font-weight: 900;
+      &-count {
+        @media only screen and (max-width: 600px) {
+          margin-left: 4rem;
+        }
+
+        padding: 0.3rem 0.6rem;
+        margin-left: 0.3rem;
+        border-radius: 30px/10px;
+        background-color: hsl(219, 85%, 26%);
+        color: hsl(0, 0%, 100%);
+        font-size: 1.4rem;
+      }
+    }
+    &--readed {
+      text-align: center;
+    }
+  }
+
+  &__notifications {
+    font-family: "Bree Serif", serif;
+    font-size: 1.1rem;
+
+    &__box {
+      padding: 1rem;
+      column-gap: 1rem;
+      display: flex;
+      margin-bottom: 0.4rem;
+      transition: background-color 0.4s;
+
+      &--msg {
+        margin-left: 0.4rem;
+        margin-top: 0.4rem;
+        border: 3px solid hsl(211, 68%, 94%);
+        padding: 1rem;
+      }
+      &--img {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.date {
+  opacity: 0.6;
+}
+
+.unseen {
+  cursor: pointer;
+  background-color: hsl(219, 85%, 26%, 0.09);
+}
+
+.btn {
+  border: none;
+  color: hsl(224, 21%, 14%);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 10px;
+
+  @media only screen and (max-width: 600px) {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    width: 100%;
+  }
+}
+
+.btn:hover {
+  transition: 0.6s;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(210, 60%, 98%);
+}
+
+.img-chess {
+  width: 3rem;
+  height: 3rem;
+  @media only screen and (max-width: 600px) {
+    margin-left: 4rem;
+  }
+  margin-left: 6rem;
+}
+
+.chess {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unread-btn {
+  border: none;
+  color: hsl(224, 21%, 14%);
+  padding: 14px 28px;
+  font-size: 16px;
+
+  cursor: pointer;
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 10px;
+}
+
+.unread-btn:hover {
+  transition: 0.6s;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(210, 60%, 98%);
+}
