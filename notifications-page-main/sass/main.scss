@@ -135,17 +135,16 @@ body {
 
 .unread-btn {
   border: none;
-  color: hsl(224, 21%, 14%);
-  padding: 14px 28px;
+  color: hsl(210, 60%, 98%);
+  padding: 1.1rem;
   font-size: 16px;
-
   cursor: pointer;
-  background-color: hsl(210, 60%, 98%);
+  background-color: hsl(219, 85%, 26%);
   border-radius: 10px;
 }
 
 .unread-btn:hover {
   transition: 0.6s;
-  background-color: hsl(219, 85%, 26%);
+  background-color: hsl(224, 21%, 14%);
   color: hsl(210, 60%, 98%);
 }
