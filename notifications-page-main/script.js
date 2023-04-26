@@ -14,16 +14,31 @@ btn.addEventListener("click", function () {
   count.innerHTML = "0";
 });
 
-for (let i = 0; i < boxes.length; i++) {
+// foreach ile
+boxes.forEach((e, i) => {
   boxes[i].addEventListener("click", function () {
     boxes[i].classList.remove("unseen");
     count.innerHTML--;
-
     if (count.innerHTML == -1) {
       count.innerHTML++;
     }
   });
-}
+});
+
+//////////////////
+
+// for dongusu ile
+
+// for (let i = 0; i < boxes.length; i++) {
+//   boxes[i].addEventListener("click", function () {
+//     boxes[i].classList.remove("unseen");
+//     count.innerHTML--;
+
+//     if (count.innerHTML == -1) {
+//       count.innerHTML++;
+//     }
+//   });
+// }
 
 unread.addEventListener("click", function () {
   boxes.forEach(function (e) {
