@@ -5,13 +5,10 @@ const unseen = document.querySelectorAll(".unseen");
 const unread = document.querySelector(".unread-btn");
 
 btn.addEventListener("click", function () {
-  boxes.forEach(function (e) {
-    e.classList.remove("unseen");
-  });
-});
-
-btn.addEventListener("click", function () {
   count.innerHTML = "0";
+  boxes.forEach(function (e, i) {
+    boxes[i].classList.remove("unseen");
+  });
 });
 
 // foreach ile
