@@ -4,13 +4,11 @@
 }
 
 body {
-  min-height: 100vh;
   display: flex;
-  margin-top: 5rem;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
   justify-content: center;
-  font-size: 1.7rem;
   background-color: hsl(211, 68%, 94%);
 }
 @media only screen and (max-width: 600px) {
@@ -23,9 +21,9 @@ body {
   background-color: hsl(210, 60%, 98%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   gap: 2rem;
-  width: 600px;
+  max-width: 600px;
   border-radius: 1rem;
   padding: 2rem;
 }
