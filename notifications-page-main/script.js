@@ -14,25 +14,16 @@ btn.addEventListener("click", function () {
   count.innerHTML = "0";
 });
 
+// foreach ile
 boxes.forEach((e, i) => {
   boxes[i].addEventListener("click", function () {
     if (boxes[i].classList.contains("unseen")) {
       count.innerHTML--;
     }
-  });
-});
-
-// foreach ile
-boxes.forEach((e, i) => {
-  boxes[i].addEventListener("click", function () {
     boxes[i].classList.remove("unseen");
   });
 });
 
-// count.innerHTML--;
-//     if (count.innerHTML == -1) {
-//       count.innerHTML++;
-//     }
 //////////////////
 
 // for dongusu ile
