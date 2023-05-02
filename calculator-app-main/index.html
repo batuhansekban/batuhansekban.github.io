@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h4 class="calc">calc</h4>
+        <div class="themechanger">
+          <div>
+            <button class="themechanger__btn themechanger__btn--native">
+              Native
+            </button>
+            <button class="themechanger__btn themechanger__btn--dark">
+              Dark
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="input">
+        <p class="symbol"></p>
+
+        <input type="text" class="input__text" />
+        <p class="gizli"></p>
+      </div>
+      <div class="all-btn">
+        <div class="btn">
+          <button class="buttons sayi">7</button
+          ><button class="buttons sayi">8</button
+          ><button class="buttons sayi">9</button
+          ><button class="buttons del">DEL</button
+          ><button class="buttons sayi">4</button
+          ><button class="buttons sayi">5</button
+          ><button class="buttons sayi">6</button
+          ><button class="buttons plus islem">+</button
+          ><button class="buttons sayi">1</button>
+          <button class="buttons sayi">2</button
+          ><button class="buttons sayi">3</button
+          ><button class="buttons minus islem">-</button
+          ><button class="buttons sayi dot">.</button
+          ><button class="buttons sayi">0</button
+          ><button class="buttons divide islem">/</button
+          ><button class="buttons multi islem">*</button
+          ><button class="buttons reset">RESET</button
+          ><button class="buttons equal">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
