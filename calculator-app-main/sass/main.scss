@@ -38,6 +38,11 @@ body {
   font-size: 2rem;
   color: white;
   margin-bottom: 5rem;
+  @media only screen and (max-width: 600px) {
+    top: -10%;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
 }
 .navbar {
   font-size: 1.8rem;
@@ -65,6 +70,7 @@ body {
 .input {
   position: relative;
   @media only screen and (max-width: 600px) {
+    position: relative;
   }
   &__text {
     color: white;
@@ -75,7 +81,6 @@ body {
     padding: 2.5rem 0.4rem;
 
     @media only screen and (max-width: 600px) {
-      position: relative;
       font-size: 1.7rem;
       padding: 1.2rem 0.4rem;
     }
