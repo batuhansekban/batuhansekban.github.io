@@ -29,7 +29,6 @@ const getButton = function () {
     e.addEventListener("click", function (e) {
       lastbutton = e.target;
       sembol.textContent = lastbutton.textContent;
-      console.log(lastbutton);
     });
   });
 };
@@ -41,10 +40,6 @@ btn.forEach((e) =>
       arrOrj.push(arr.join(""));
       text.value = arrOrj.slice(-1);
     }
-
-    console.log(words);
-    console.log(arrOrj);
-    console.log(arrOrj.slice(-1));
   })
 );
 
@@ -57,7 +52,6 @@ const sum = function (e) {
   toplama.addEventListener("click", function (e) {
     gizli.textContent = Number(gizli.textContent) + Number(text.value);
     clear();
-    console.log(arr);
 
     if (text.value !== 0) {
       text.value = 0;
@@ -79,10 +73,7 @@ const minus = function (e) {
       text.value = 0;
     }
 
-    console.log(cikti);
     clear();
-    console.log(arr);
-    console.log(tamkesir);
   });
 };
 
@@ -100,10 +91,7 @@ const divide = function (e) {
       text.value = 0;
     }
 
-    console.log(cikti);
     clear();
-    console.log(arr);
-    console.log(tamkesir);
   });
 };
 
@@ -121,10 +109,7 @@ const multiply = function (e) {
       text.value = 0;
     }
 
-    console.log(cikti);
     clear();
-    console.log(arr);
-    console.log(tamkesir);
   });
 };
 
