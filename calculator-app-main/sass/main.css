@@ -66,7 +66,6 @@ body {
 @media only screen and (max-width: 600px) {
   .gizli {
     top: 40%;
-    left: 83%;
     font-size: 1.1rem;
   }
 }
