@@ -168,6 +168,7 @@ cartButton.addEventListener("click", function () {
 deleteButton.addEventListener("click", function () {
   hiddenCart.style.display = "none";
   empty.style.display = "block";
+  notification.textContent = 0;
 });
 
 hamburger.addEventListener("click", function () {
