@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;800&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Batuhan Sekban | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar__mobile">
+        <span class="navbar__mobile--close">&times;</span>
+        <a href="" class="navbar__mobile--categories">Collections</a
+        ><a href="" class="navbar__mobile--categories">Men</a
+        ><a href="" class="navbar__mobile--categories">Women</a
+        ><a href="" class="navbar__mobile--categories">About</a
+        ><a href="" class="navbar__mobile--categories">Contact</a>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar__logo">
+          <div class="navbar__hamburger_menu">&#9776;</div>
+          <img src="./images/logo.svg" alt="" class="navbar__img" />
+          <a href="" class="categories">Collections</a
+          ><a href="" class="categories">Men</a
+          ><a href="" class="categories">Women</a
+          ><a href="" class="categories">About</a
+          ><a href="" class="categories">Contact</a>
+        </div>
+        <div class="navbar__final">
+          <div class="navbar__final--cart">
+            <svg
+              width="22"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="cart__button"
+            >
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <p class="notification"></p>
+          </div>
+          <div class="navbar__final--profile">
+            <img
+              src="images/image-avatar.png"
+              alt=""
+              style="width: 3.5rem"
+              class="avatar"
+            />
+          </div>
+        </div>
+
+        <div class="navbar__cart">
+          <div class="navbar__cart--div">
+            <h3>Cart</h3>
+
+            <hr />
+            <div class="hidden-nav">
+              <div class="hidden-product">
+                <img
+                  src="./images/image-product-1.jpg"
+                  alt=""
+                  class="navbar__main--photo"
+                />
+                <div class="img-flex">
+                  <div class="delete">
+                    <p>Fall Limited Edition Sneakers</p>
+                    <img src="./images/icon-delete.svg" alt="" class="delete" />
+                  </div>
+                  <div class="actual__price-div">
+                    <p class="actual_price">$125</p>
+                    <span class="count">x3</span>
+                    <p class="calculated_price">$375</p>
+                  </div>
+                </div>
+              </div>
+              <button class="checkout__btn">Checkout</button>
+            </div>
+
+            <p class="navbar__cart--icerigi">Your cart is empty</p>
+          </div>
+        </div>
+      </div>
+      <hr class="cizgi" />
+
+      <div class="main">
+        <div class="left-side">
+          <div class="left-side__main--photo">
+            <img
+              src="./images/image-product-1.jpg"
+              alt=""
+              class="main__photo"
+            />
+          </div>
+          <div class="left-side__down--photos">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails photo--1"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails photo--2"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails photo--3"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails photo--4"
+            />
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="right-side__head">
+            <h5>SNEAKER COMPANY</h5>
+          </div>
+          <div class="right-side__second-head">
+            Fall Limited Edition Sneakers
+          </div>
+          <div class="right-side__paragraph">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </div>
+          <div class="mobile__prices">
+            <div class="right-side__prices">
+              <h3 class="price">$125.00</h3>
+              <p class="discount">50%</p>
+            </div>
+            <div class="right-side__original--price"><del> $250.00</del></div>
+          </div>
+          <div class="right-side__cart">
+            <div class="right-side__cart--prev_next">
+              <button class="right-side__cart--prev-button calc">-</button>
+              <p class="item--count">0</p>
+              <button class="right-side__cart--next-button calc">+</button>
+            </div>
+            <button class="right-side__cart--add-button">
+              <img src="./images/icon-cart.svg" alt="" /> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <button class="prev-button gecis"><</button>
+        <button class="next-button gecis">></button>
+        <div class="left-side">
+          <div class="left-side__main--photo">
+            <img
+              src="./images/image-product-1.jpg"
+              alt=""
+              class="main__photo modal--main__photo"
+              id="photo"
+            />
+          </div>
+          <div class="left-side__down--photos">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails modal--photo--1"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails modal--photo--2"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails modal--photo--3"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt=""
+              class="left-side__down--photos-thumbnails modal--photo--4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+Collections
+Men
+Women
+About
+Contact
+
+Sneaker Company
+
+Fall Limited Edition Sneakers
+
+These low-profile sneakers are your perfect casual wear companion. Featuring a 
+durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+$125.00
+50%
+$250.00
+
+0
+Add to cart -->
