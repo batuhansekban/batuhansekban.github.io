@@ -330,7 +330,7 @@ body {
       color: black;
     }
     &--add-button {
-      padding: 1rem 6rem;
+      padding: 1rem 3rem;
       border: none;
       border-radius: 20px 20px;
       background-color: var(--orange);
@@ -338,7 +338,6 @@ body {
       cursor: pointer;
       font-size: 1.2rem;
       transition: 0.2s;
-
       @media only screen and (max-width: 600px) {
         border-radius: 5px 5px;
         margin-bottom: 1rem;

@@ -357,7 +357,7 @@ body {
   color: black;
 }
 .right-side__cart--add-button {
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   border: none;
   border-radius: 20px 20px;
   background-color: var(--orange);
