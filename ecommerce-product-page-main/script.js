@@ -132,9 +132,10 @@ let replacedPrice = price.textContent.replace("$", "");
 const addcart = function () {
   addToCart.addEventListener("click", function (e) {
     let actualPrice = item.textContent * replacedPrice;
-
+    count.textContent = "x" + item.textContent;
+    calculatedPrice.textContent = `$` + item.textContent * replacedPrice;
     cart.style.display = "block";
-
+    notification.textContent = item.textContent;
     hiddenCart.style.display = "block";
     empty.style.display = "none";
     if (item.textContent == 0) {
@@ -144,17 +145,7 @@ const addcart = function () {
   });
 };
 calcPrice.forEach((e) => {
-  e.addEventListener("click", function () {
-    if (item.textContent > 0) {
-      count.textContent = "x" + item.textContent;
-      calculatedPrice.textContent = `$` + item.textContent * replacedPrice;
-      notification.textContent = item.textContent;
-    } else {
-      count.textContent = "";
-      notification.textContent = "";
-      calculatedPrice.textContent = "";
-    }
-  });
+  e.addEventListener("click", function () {});
 });
 
 cartButton.addEventListener("click", function () {
