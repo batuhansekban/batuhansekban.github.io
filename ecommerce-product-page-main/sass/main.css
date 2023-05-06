@@ -110,6 +110,7 @@ body {
   -o-object-fit: scale-down;
      object-fit: scale-down;
   margin-right: 5rem;
+  cursor: pointer;
 }
 .navbar__logo {
   display: flex;
@@ -122,6 +123,9 @@ body {
   align-items: center;
 }
 
+.avatar {
+  cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
   .avatar {
     width: 2.5rem !important;
@@ -539,6 +543,11 @@ body {
 .delete img {
   width: 1.5rem;
   height: 1.5rem;
+  cursor: pointer;
+}
+
+.delete_img:hover {
+  transform: translateY(-1px);
 }
 
 .navbar__main--photo {
@@ -571,4 +580,10 @@ body {
   padding: 1rem;
   background-color: var(--orange);
   margin-top: 2rem;
+  cursor: pointer;
+}
+
+.checkout__btn:hover {
+  background-color: black;
+  color: var(--orange);
 }/*# sourceMappingURL=main.css.map */

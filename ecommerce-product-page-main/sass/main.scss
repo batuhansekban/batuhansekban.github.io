@@ -102,6 +102,7 @@ body {
     overflow: hidden;
     object-fit: scale-down;
     margin-right: 5rem;
+    cursor: pointer;
   }
   &__logo {
     display: flex;
@@ -116,6 +117,7 @@ body {
 }
 
 .avatar {
+  cursor: pointer;
   @media only screen and (max-width: 600px) {
     width: 2.5rem !important;
     height: 2.5rem;
@@ -504,7 +506,11 @@ body {
   img {
     width: 1.5rem;
     height: 1.5rem;
+    cursor: pointer;
   }
+}
+.delete_img:hover {
+  transform: translateY(-1px);
 }
 .navbar__main--photo {
   position: relative;
@@ -535,4 +541,9 @@ body {
   padding: 1rem;
   background-color: var(--orange);
   margin-top: 2rem;
+  cursor: pointer;
+}
+.checkout__btn:hover {
+  background-color: black;
+  color: var(--orange);
 }
